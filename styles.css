@@ -6,31 +6,81 @@
     box-sizing: border-box;
 }
 
+/* Theme colors */
+:root {
+    /* Primary Colors */
+    --sidebar-bg: #064e3b; /* Deep Emerald Green */
+    --sidebar-text: #ecfdf5; /* Sofrt Mint White */
+    --sidebar-hover: #047857; /* Lighter Green for buttons/hover */
+
+    /* Main Dashboard Area */
+    --header-bg: #ffffff; /* Pure White */
+    --header-text: #0f172a; /* Dark text for Readability */
+
+    --main-bg: #f0fdf4; /* Soft, Very Light Mint Green */
+    --main-text: #166534; /* Darker Green for Main Headings */
+    
+    --card-bg: #ffffff; /* Pure white cards to POP on the light green bg */
+}
+
 /* Dark theme */
 body {
-    background-color: black;
-    color: chartreuse;
+    min-height: 100vh; /* Makes body at least full viewport height */
+}
+
+ul {
+    padding-left: 2.5rem;
+}
+
+li:hover {
+    color: var(--sidebar-hover);
+    cursor: pointer;
 }
 
 .container {
+    /* Layout */
     display: grid;
-
+    min-height: 100dvh; /* Makes the grid fill full viewport hieght */
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 2fr;
 }
 
 .sidebar {
+    /* Layout */
     grid-area: 1 / 1 / 3 / 2;
+
+    /* Colors */ 
+    background-color: var(--sidebar-bg);
+    color: var(--sidebar-text);
 }
 
 .header {
+    /* Layout */
     grid-area: 1 / 2 / 2 / 3;
+
+    /* Colors */
+    background-color: var(--header-bg);
+    color: var(--header-text);
+}
+
+button {
+    border-radius: 20px;
+    width: 50px;
+    height: 25px;
+    background-color: var(--sidebar-bg);
+    color: var(--sidebar-text);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--sidebar-hover);
 }
 
 .main-content {
+    /* Layout */
     grid-area: 2 / 2 / 3 / 3;
-}
 
-.container > * {
-    border: 3px solid white;
+    /* Colors */
+    background-color: var(--main-bg);
+    color: var(--main-text);
 }
