@@ -50,6 +50,7 @@ body {
     color: var(--sidebar-text);
 }
 
+/* For sidebar nav */
 .nav-container {
     width: fit-content;
     display: flex;
@@ -78,6 +79,11 @@ li svg {
 
 li:hover {
     color: var(--sidebar-hover);
+    cursor: pointer;
+}
+
+li:hover svg path {
+    fill: var(--sidebar-hover);
     cursor: pointer;
 }
 
