@@ -17,7 +17,7 @@
     --header-bg: #ffffff; /* Pure White */
     --header-text: #0f172a; /* Dark text for Readability */
 
-    --main-bg: #f0fdf4; /* Soft, Very Light Mint Green */
+    --main-bg: #c3f1d2; /* Soft, Very Light Mint Green */
     --main-text: #166534; /* Darker Green for Main Headings */
     
     --card-bg: #ffffff; /* Pure white cards to POP on the light green bg */
@@ -42,7 +42,7 @@ li:hover {
     display: grid;
     min-height: 100dvh; /* Makes the grid fill full viewport hieght */
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 4fr;
 }
 
 .sidebar {
@@ -57,15 +57,41 @@ li:hover {
 .header {
     /* Layout */
     grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 
     /* Colors */
     background-color: var(--header-bg);
     color: var(--header-text);
 }
 
+.header-top-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+form > p {
+    display: inline;
+}
+
+input {
+    border-radius: 20px;
+    /* width: 80%; */
+    border: none;
+    background-color: var(--main-bg);
+    color: var(--header-text);
+}
+
+.top-row-items {
+    display: flex;
+    /* justify-content: start; */
+    gap: 10px;
+}
+
 button {
     border-radius: 20px;
-    width: 50px;
+    width: 75px;
     height: 25px;
     background-color: var(--sidebar-bg);
     color: var(--sidebar-text);
@@ -74,6 +100,15 @@ button {
 button:hover {
     cursor: pointer;
     background-color: var(--sidebar-hover);
+}
+
+.header-bottom-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.greetings-items {
+    display: flex;
 }
 
 .main-content {
