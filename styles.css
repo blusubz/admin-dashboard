@@ -99,6 +99,15 @@ li:hover svg path {
     gap: 1rem;
 }
 
+.sidebar-logo-header:hover svg path {
+    fill: var(--sidebar-hover);
+    cursor: pointer;
+}
+h2:hover {
+    color: var(--sidebar-hover);
+    cursor: pointer;
+}
+
 .alien {
     /* position: absolute; */
     width: 250px;
