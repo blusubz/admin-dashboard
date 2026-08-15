@@ -373,7 +373,7 @@ hr {
 }
 
 .trending-card {
-    width: fit-content;
+    width: 100%;
     height: auto;
     border-radius: 7px;
     background-color: var(--card-bg);
