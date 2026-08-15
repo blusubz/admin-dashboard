@@ -25,11 +25,24 @@
     --card-title: #166534; /* Bold, dark green title */
     --card-text: #1e3a2b;     /* Softer dark green/slate for body text */
     --card-border: #0a3d24;   /* Darker than main-bg & darker than main-text */
+
+    /* Fonts */
+    --font-main: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Ensure inputs and buttons use the body font */
+input,
+button,
+textarea,
+select {
+    font-family: inherit;
 }
 
 /* Dark theme */
 body {
     min-height: 100vh; /* Makes body at least full viewport height */
+    /* styles.css */
+    font-family: var(--font-main);
 }
 
 .container {
