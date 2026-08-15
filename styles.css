@@ -263,7 +263,7 @@ button:hover {
 .projects svg {
     width: 18px;
     height: 18px;
-    fill: var(--card-title);
+    /* fill: var(--card-title); */
 }
 
 .projects-header {
@@ -354,6 +354,16 @@ hr {
 .announcements-card p {
     font-size: 0.75rem;
     color: var(--card-text);
+}
+
+.card-actions svg path {
+    fill: var(--card-title);
+    box-sizing: content-box;
+}
+
+.card-actions svg path:hover {
+    fill: var(--main-bg);
+    cursor: pointer;
 }
 
 .trending-card {
