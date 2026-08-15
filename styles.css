@@ -366,19 +366,43 @@ hr {
     cursor: pointer;
 }
 
-.trending-card {
-    width: fit-content;
-    height: auto;
-    border-radius: 7px;
-    background-color: var(--card-bg);
-    color: var(--card-text);
-}
-
 .trending-header {
     color: var(--card-text);
     margin: 10px;
     margin-left: 0; 
 }
 
+.trending-card {
+    width: fit-content;
+    height: auto;
+    border-radius: 7px;
+    background-color: var(--card-bg);
+    color: var(--card-text);
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.user-row {
+    display: flex;
+    align-items: center;
+    font-size: .7rem;
+    gap: .8rem;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    color: var(--main-text);
+}
+
+.user-row img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    object-fit: cover;
+}
 /* Todo: 
 - Font family  */
